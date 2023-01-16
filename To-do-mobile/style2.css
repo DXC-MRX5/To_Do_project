@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #F7F7F7;
+}
+.all-cntnr{
+    position: relative;
+    width: 900px;
+    height: 400px;
+    margin: 50px auto;
+}
+header{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 70px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 5px 20px #7B7B7B;
+}
+.tl{
+    position: absolute;
+    top: 25px;
+    left: 100px;
+    font-family: 'Roboto', sans-serif;
+    color: #424242;
+    cursor: pointer;
+}
+span{color: #00A5EC;}
+.back-btn{
+    display: inline-block;
+    position: relative;
+    top: 12px;
+    left: 300px;
+    cursor: pointer;
+}
+.back-btn p{
+    position: absolute;
+    top: 37px;
+    left: 40px;
+    display: inline-block;
+    color: #424242;
+    font-family: 'Roboto', sans-serif;
+}
+.bck{
+    display: inline-block;
+    position: relative;
+    top: 30px;
+    width: 30px;
+    height: 30px;
+    background-color: #424242;
+    border-radius: 50%;
+}
+.bck:hover{
+    box-shadow: 3px 3px 10px #7B7B7B;
+    border: 1px solid #00A5EC;
+}
+.bck .material-symbols-outlined{
+    color: white;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+}
+.action-btn{
+    display: inline-block;
+    position: absolute;
+    top: 100px;
+    left: 450px;
+    font-family: 'Roboto', sans-serif;
+    color: #424242;
+    cursor: pointer;
+}
+.btn{
+    display: inline-block;
+    position: relative;
+    top: 12px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #00A5EC;
+}
+.btn:hover{
+    box-shadow: 3px 3px 10px #424242;
+    border: 1px solid rgb(32, 58, 173);
+}
+.btn .material-symbols-outlined{
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    color: white;
+}
+.task{
+    position: relative;
+    top: 60px;
+    left: 300px;
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 5px 5px 40px 10px #7B7B7B;
+}
+h4{
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #00A5EC;
+}
+input[type=checkbox]{
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+label{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #424242;
+    cursor: pointer;
+}
+.lnth{
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+.task div{
+    margin-top: 20px;
+    margin-left: 20px;
+    line-height: 35px;
+}
+@media screen and (max-width: 450px) {
+    .all-cntnr{
+        width: 95vw;
+    }
+    .tl{
+        left: 35vw;
+    }
+    .thdn{
+        display: none;
+    }
+    .action-btn{
+        left: 45vw;
+    }
+    .action-btn p{
+        visibility: hidden;
+    }
+    .back-btn{
+        left: 10vw;
+    }
+    .task{
+        left: 10vw;
+    }
+}
