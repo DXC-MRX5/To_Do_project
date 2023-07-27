@@ -8,8 +8,9 @@ body{
 }
 .all-cntnr{
     position: relative;
-    width: 900px;
-    height: 400px;
+    width: 100%;
+    min-height: 750px;
+    height: max-content;
     margin: 50px auto;
     background-color: rgba(0, 0, 0, 0.6);
     filter: brightness(60%);
@@ -31,29 +32,34 @@ header{
     cursor: pointer;
 }
 span{color: #00A5EC;}
+.btnBox{
+    margin: 2em auto;
+    width: 30%;
+    min-width: 20em;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
 .back-btn{
-    display: inline-block;
-    position: relative;
-    top: 12px;
-    left: 300px;
+    width: 8em;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 .back-btn p{
-    position: absolute;
-    top: 37px;
-    left: 40px;
-    display: inline-block;
     color: #424242;
     font-family: 'Roboto', sans-serif;
 }
 .bck{
-    display: inline-block;
-    position: relative;
-    top: 30px;
-    width: 30px;
-    height: 30px;
+    width: 2.4em;
+    height: 2.4em;
     background-color: #424242;
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .bck:hover{
     box-shadow: 3px 3px 10px #7B7B7B;
@@ -61,44 +67,38 @@ span{color: #00A5EC;}
 }
 .bck .material-symbols-outlined{
     color: white;
-    position: absolute;
-    top: 3px;
-    left: 3px;
 }
 .action-btn{
-    display: inline-block;
-    position: absolute;
-    top: 100px;
-    left: 450px;
+    width: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     font-family: 'Roboto', sans-serif;
     color: #424242;
     cursor: pointer;
 }
 .btn{
-    display: inline-block;
-    position: relative;
-    top: 12px;
-    width: 35px;
-    height: 35px;
+    width: 2.4em;
+    height: 2.4em;
     border-radius: 50%;
     background-color: #00A5EC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .btn:hover{
     box-shadow: 3px 3px 10px #424242;
     border: 1px solid rgb(32, 58, 173);
 }
 .btn .material-symbols-outlined{
-    position: absolute;
-    top: 6px;
-    left: 6px;
     color: white;
 }
 .task{
-    position: relative;
-    top: 60px;
-    left: 300px;
-    width: 300px;
-    height: 200px;
+    margin: 2em auto;
+    width: 30%;
+    min-width: 20em;
+    min-height: 250px;
+    height: 40vh;
     background-color: white;
     border-radius: 8px;
     cursor: pointer;
@@ -107,7 +107,9 @@ span{color: #00A5EC;}
 h4{
     padding: 20px;
     font-family: 'Roboto', sans-serif;
+    font-size: 1.4em;
     color: #00A5EC;
+    text-align: center;
 }
 input[type=checkbox]{
     width: 18px;
@@ -134,7 +136,8 @@ label{
     top: 180px;
     left: 532px;
     border-radius: 10px;
-    width: 300px;
+    min-width: 300px;
+    width: 30%;
     height: 170px;
     background-color: white;
 }
@@ -145,8 +148,9 @@ label{
     cursor: pointer;
 }
 #cls{
-    position: relative;
-    left: 125px;
+    position: absolute;
+    top: 15px;
+    right: 10px;
     display: inline-block;
     color: #7B7B7B;
     cursor: pointer;
@@ -154,7 +158,7 @@ label{
 #txtarea-item{
     margin: 10px;
     height: 30px;
-    width: 270px;
+    width: 95%;
 }
 .aditem-btn{
     position: absolute;

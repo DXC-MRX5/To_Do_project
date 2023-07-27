@@ -8,8 +8,9 @@ body{
 }
 .all-cntnr{
     position: relative;
-    width: 900px;
-    height: 750px;
+    width: 100%;
+    min-height: 750px;
+    height: max-content;
     margin: 50px auto;
     background-color: rgba(0, 0, 0, 0.6);
     filter: brightness(60%);
@@ -35,7 +36,7 @@ span{color: #00A5EC;}
     display: inline;
     position: relative;
     top: 20px;
-    left: 650px;
+    left: 65%;
     font-family: 'Roboto', sans-serif;
     color: #424242;
     cursor: pointer;
@@ -63,18 +64,17 @@ span{color: #00A5EC;}
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
-    position: relative;
-    top: 50px;
-    width: 770px;
+    margin: 8em auto;
+    width: 90%;
     height: 550px;
     align-content: space-around;
     gap: 15px; 
     padding-left: 15px;
 }
 .task{
-    width: 235px;
-    height: 245px;
+    width: 30%;
+    min-height: 245px;
+    height: 45vh;
     background-color: white;
     border-radius: 8px;
     cursor: pointer;
@@ -86,6 +86,7 @@ span{color: #00A5EC;}
     padding: 20px;
     font-family: 'Roboto', sans-serif;
     color: #00A5EC;
+    text-align: center;
 }
 input[type=checkbox]{
     width: 18px;
